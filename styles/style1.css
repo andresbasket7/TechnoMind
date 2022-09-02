@@ -1,0 +1,179 @@
+body{
+    cursor: url(Pluma-removebg-preview.png), auto;
+	background-image:url('FONDO-PERIODICO.jpg');
+}
+.texto{
+    padding-top: 50px;
+    text-align:justify;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+h1{
+	font-family: 'Ultra', serif;
+    text-align: center;
+    font-size: 350%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+h2{
+	font-family: 'Ultra', serif;
+    font-size: 250%;
+}
+h3, h4{
+	font-family: 'Alfa Slab One', cursive;
+    font-size: 150%;
+}
+.references{
+    text-align: left;
+    padding-left: 50px;
+}
+p:not(.pie){
+	font-family: 'Kanit', sans-serif;
+    font-size: 120%;
+	column-count:2;
+	column-gap: 3em;
+    column-rule: 1px solid #bbb;
+	column-width: 140px;
+        
+}
+.pie{
+    font-weight: bold;
+}
+a{
+    cursor: url(tintero-removebg-preview.png), auto;
+    color:#633401;
+}
+.particle{
+    padding-top: 50px;
+}
+/*Imagenes*/
+.img3{
+    width: 100%;
+    height: auto;      
+}
+.documentimg{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    height:300px;
+    width: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*footer*/
+
+footer{
+    font-family: 'Kanit', sans-serif;
+    background-image:url('FONDOPERIODICO2.jpg');
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 0.9em;
+    line-height: 5px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Menu*/
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.nav-bar{
+	background-image:url('FONDOPERIODICO1.jpg');
+    padding: 20px;
+    display: block;
+    color: rgb(25, 22, 22);
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
+}
+.menu, .submenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu{
+	background-image:url('FONDOPERIODICO1.jpg');
+    font-weight: bold;
+    width: 100%;
+    margin-left: 0;
+    transition: all 0.5s;
+}
+.menu_link{
+    display: block;
+    padding: 20px;
+    color: rgb(25, 22, 22);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.nav-bar:hover{
+    background-image:url('FONDOPERIODICO2.jpg');
+}
+.menu_link:hover{
+	background-image:url('FONDOPERIODICO2.jpg');
+}
+
+.submenu .menu_link:hover{
+	background-image:url('FONDOPERIODICO2.jpg');
+}
+.submenu{
+    position: absolute;
+    top: 60px;
+    width: 120px;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+}
+.container-submenu:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+.container-submenu{
+    position: relative;
+}
+.submenu .menu_link{
+	background-image:url('FONDOPERIODICO3.jpg');
+    padding-left: 20px;
+}
+.menu_item.right0{
+    position:absolute;
+    right: 200px;
+}
+.menu_item.right1{
+    position:absolute;
+    right: 110px;
+}
+.menu_item.right2{
+    position:absolute;
+    right: 20px;
+}
+
+
+
+@media(min-width:1024px){
+    .nav-bar{
+        display:none;
+    }
+    .menu{
+        margin-left: 0;
+        display: flex;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        width: 100%;
+    }
+}
+
+/*Foto*/
+.foto{
+    align-items: center;
+}
+.texto .foto{
+    height: 307px;
+    width: 224px;
+}

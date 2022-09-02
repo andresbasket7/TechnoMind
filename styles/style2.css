@@ -1,0 +1,221 @@
+body {
+    cursor: url(punterocomic-removebg-preview.png), auto;
+    background-image: url("FONDO-COMIC4.jpg");
+}
+#text_content { 
+    padding: 5%;
+	margin-left: 2%;
+	width:70%;
+    background-color: white;
+}
+
+h1 {
+    font-family: 'DynaPuff', cursive;
+	font-size: 50pt;
+	letter-spacing: 8px;
+	text-align: center;
+	font-weight: 400;
+}
+h2 {
+    font-family: 'DynaPuff', cursive;
+	font-size: 35pt;
+	letter-spacing: 8px;
+	text-align: center;
+	font-weight: 400;
+}
+h3, h4{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20pt;
+}
+.references{
+    text-align: left;
+    padding-left: 50px;
+}
+p:not(.pie){
+    font-family: 'Comic Neue', cursive;
+    font-size: 15pt;  /* For full-size comic books (6.625” x 10.187” trim), most creators use a 9.5 or 10-point size.*/
+}
+.pie{
+    font-weight: bold;
+}
+a{
+    cursor: url(bang-removebg-preview.png), auto;
+    color:#9a0202;
+}
+.particle{
+    padding-top: 50px;
+}
+
+
+/*comic cloud */
+.footnote {
+	position: relative;
+	width: 10%;
+	text-align: center;
+	line-height: 1.4em;
+	margin: 40px auto;
+	background-color: #fff;
+	border: 8px solid #333;
+	border-radius: 30px;
+	padding: 20px;
+	font-size: large;
+}
+span.footnote {
+	width: 300px;
+	border-radius: 200px;
+	padding: 30px;
+}
+
+span.footnote:before,
+span.footnote:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: 10px;
+	bottom: -30px;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border: 8px solid #333;
+	-webkit-border-radius: 28px;
+	-moz-border-radius: 28px;
+	border-radius: 28px;
+}
+
+span.footnote:after {
+	width: 20px;
+	height: 20px;
+	left: 5px;
+	bottom: -40px;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+}
+
+/*buttons*/
+sup button {
+	font-family: VTC Letterer Pro;
+	font-size:25px;
+	width:50px;
+	height: 20px;
+	background-color: yellow;
+	box-shadow: 5px 5px #333;
+	cursor: pointer;
+
+}
+
+/*images*/
+img {
+	max-width: 100%;
+    height: auto;
+}
+
+/*footer*/
+
+footer{
+    font-family: 'Kanit', sans-serif;
+    background-image:url('FONDO-COMIC.jpg');
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 0.9em;
+    line-height: 5px;
+}
+
+/*Menu*/
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.nav-bar{
+    padding: 20px;
+    display: block;
+    color: rgb(25, 22, 22);
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
+}
+.menu, .submenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    font-weight: bold;
+    width: 100%;
+    margin-left: 0;
+    transition: all 0.5s;
+}
+.menu_link{
+    display: block;
+    padding: 20px;
+    color: rgb(25, 22, 22);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.nav-bar:hover{
+    background-image:url('FONDO-COMIC.jpg');
+}
+.menu_link:hover{
+	background-image:url('FONDO-COMIC.jpg');
+}
+
+.submenu .menu_link:hover{
+	background-image:url('FONDO-COMIC.jpg');
+}
+.submenu{
+    position: absolute;
+    top: 60px;
+    width: 120px;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+}
+.container-submenu:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+.container-submenu{
+    position: relative;
+}
+.submenu .menu_link{
+	background-image:url('FONDO-COMIC2.jpg');
+    padding-left: 20px;
+}
+.menu_item.right0{
+    position:absolute;
+    right: 200px;
+}
+.menu_item.right1{
+    position:absolute;
+    right: 110px;
+}
+.menu_item.right2{
+    position:absolute;
+    right: 20px;
+}
+
+
+
+@media(min-width:1024px){
+    .nav-bar{
+        display:none;
+    }
+    .menu{
+        margin-left: 0;
+        display: flex;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.foto{
+    height: 307px;
+    width: 224px;
+}

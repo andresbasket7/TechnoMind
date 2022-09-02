@@ -1,0 +1,162 @@
+
+.texto{
+    padding-top: 50px;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.particle{
+    padding-top: 50px;
+}
+h1{
+    text-align: center;
+    font-size: 350%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+h2{
+    font-size: 250%;
+}
+h3{
+    font-size: 200%;
+}
+.references{
+    text-align: left;
+    padding-left: 50px;
+}
+p{
+    font-size: 120%;
+}
+/*Imagenes*/
+.img3{
+    width: 100%;
+    height: auto;      
+}
+.documentimg{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    height:300px;
+    width: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+footer{
+    background-color: #669999;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 0.9em;
+    line-height: 5px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Menu*/
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.nav-bar{
+    background: #669999;
+    padding: 20px;
+    display: block;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
+}
+.menu, .submenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    background: #448181;
+    width: 100%;
+    margin-left: 0;
+    transition: all 0.5s;
+}
+.menu_link{
+    display: block;
+    padding: 20px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.nav-bar:hover{
+    background: #122a2a;
+}
+.menu_link:hover{
+    background: #122a2a;
+}
+
+.submenu .menu_link:hover{
+    background: #091212;
+}
+.submenu{
+    position: absolute;
+    top: 60px;
+    width: 120px;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+}
+.container-submenu:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+.container-submenu{
+    position: relative;
+}
+.submenu .menu_link{
+    background: #122626;
+    padding-left: 20px;
+}
+.menu_item.right0{
+    background: #448181;
+    position:absolute;
+    right: 200px;
+}
+.menu_item.right1{
+    background: #448181;
+    position:absolute;
+    right: 110px;
+}
+.menu_item.right2{
+    background: #448181;
+    position:absolute;
+    right: 20px;
+}
+.mostrar{
+    margin-left: 0;
+}
+
+
+@media(min-width:1024px){
+    .nav-bar{
+        display:none;
+    }
+    .menu{
+        margin-left: 0;
+        display: flex;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        width: 100%;
+    }
+}
+
+/*Foto*/
+
+.video{
+   padding-top: 50px;
+}
+.texto .foto{
+    height: 307px;
+    width: 224px;
+}
