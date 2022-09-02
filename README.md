@@ -1,1 +1,1 @@
-# Simon-says
+# TechnoMind
